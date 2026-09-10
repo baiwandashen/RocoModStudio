@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>RocoModStudio</AssemblyName>
+    <RootNamespace>RocoModStudio</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\app-icon.ico</ApplicationIcon>
+    <Version>0.4.1</Version>
+    <Authors>Roco Mod Studio contributors</Authors>
+    <Description>Unified mod editor for Roco Kingdom World cooked assets.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UAssetAPI" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\tools\PetBpSwap\**\*" Condition="Exists('..\..\tools\PetBpSwap')"
+          Link="Tools\PetBpSwap\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\tools\Node\**\*" Condition="Exists('..\..\tools\Node')"
+          Link="Tools\Node\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\tools\repak\**\*" Condition="Exists('..\..\tools\repak')"
+          Link="Tools\repak\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\tools\UE4-DDS-Tools\**\*" Condition="Exists('..\..\tools\UE4-DDS-Tools')"
+          Link="Tools\UE4-DDS-Tools\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\tools\FModel\**\*" Condition="Exists('..\..\tools\FModel')"
+          Link="Tools\FModel\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\tools\CUE4ParseCli\**\*" Condition="Exists('..\..\tools\CUE4ParseCli')"
+          Link="Tools\CUE4ParseCli\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Include="Bridges\**\*"
+          Link="Tools\Bridges\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />    <None Include="..\..\tools\UAssetAPI\LICENSE.txt" Condition="Exists('..\..\tools\UAssetAPI\LICENSE.txt')"
+          Link="Tools\UAssetAPI\LICENSE.txt"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\tools\THIRD-PARTY-NOTICES.txt" Condition="Exists('..\..\tools\THIRD-PARTY-NOTICES.txt')"
+          Link="Tools\THIRD-PARTY-NOTICES.txt"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Link="README.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\LICENSE" Link="LICENSE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\app-icon.png" />
+    <Resource Include="Assets\app-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\docs\ModdingDesign.md" Link="docs\ModdingDesign.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
+
+
+
+
+
+
+
+
+
+
+

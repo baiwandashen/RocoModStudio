@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RocoAssetCli/RocoAssetCli.csproj" />
+    <Project Path="src/RocoModStudio/RocoModStudio.csproj" />
+  </Folder>
+</Solution>

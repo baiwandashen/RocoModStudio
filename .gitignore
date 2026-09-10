@@ -1,0 +1,26 @@
+# Build outputs
+bin/
+obj/
+artifacts/
+outputs/
+work/
+
+# IDE
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Tool binaries are release assets, not Git content
+tools/*
+!tools/README.md
+!tools/manifest.example.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,8 @@
+{
+  "repakZip": "https://github.com/trumank/repak/releases/download/v0.2.3/repak_cli-x86_64-pc-windows-msvc.zip",
+  "ue4DdsZip": "https://github.com/matyalatte/UE4-DDS-Tools/releases/download/v0.6.1/UE4-DDS-Tools-v0.6.1-Batch.zip",
+  "nodeVersion": "24.19.0",
+  "nodeZip": "https://nodejs.org/dist/v24.19.0/node-v24.19.0-win-x64.zip",
+  "fmodelArchive": "",
+  "cue4parseCliArchive": ""
+}
