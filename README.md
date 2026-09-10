@@ -2,6 +2,10 @@
 
 Roco Kingdom World 的统一 Mod 工作台。界面按实际制作顺序组织：
 
+
+
+目前一切处于测试阶段(假想，感兴趣可以继续研究并完善，感谢！！！！
+
 1. **游戏包解包 / FModel**：内置最新 FModel 2b09c12f 图形浏览器，以及可解 Roco Patch 的 nrc/CUE4Parse 2b09c12f 命令行核心。支持 AES、Oodle、usmap、列表、断点续传解包、对象提取、自动识别资源并生成直接覆盖 PAK。
 2. **PAK 提取 / 打包**：调用 repak 查看、列出、哈希、解包与重新打包 UE4.26 PAK。
 3. **蓝图与资源编辑**：内置 UAssetAPI，检查 export/import/name map，导出和写回 cooked `.uasset` JSON。
