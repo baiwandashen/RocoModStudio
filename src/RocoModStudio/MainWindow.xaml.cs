@@ -282,7 +282,7 @@ public partial class MainWindow : Window
         {
             CaptureSettings();
             BusyText.Text = "检测工具...";
-            var statuses = await Task.Run(() => _toolLocator.Detect(_settings));
+            var statuses = await Task.Run(() => _toolLocator.Detect(_settings)).WaitAsync(TimeSpan.FromSeconds(20));
             HomeToolStatusStack.Children.Clear();
             SettingsToolStatusStack.Children.Clear();
             foreach (var status in statuses)
@@ -458,6 +458,7 @@ public partial class MainWindow : Window
         AppendLog("正在取消当前操作...", (Brush)FindResource("WarningBrush"));
     }
 }
+
 
 
 

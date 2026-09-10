@@ -23,7 +23,7 @@ public partial class MainWindow
 
             try
             {
-                var statuses = await Task.Run(() => _toolLocator.Detect(_settings));
+                var statuses = await Task.Run(() => _toolLocator.Detect(_settings)).WaitAsync(TimeSpan.FromSeconds(20));
                 foreach (var status in statuses)
                     Add(status.Available ? "OK" : "WARN", $"{status.Name}: {(status.Available ? status.Detail : "未找到或未配置")}");
             }
@@ -131,3 +131,4 @@ public partial class MainWindow
         }
     }
 }
+
